@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/vasilemidrigan/todo-app",
+  "homepage": "https://vasilemidrigan.github.io/todo-app",
   "name": "todo-app",
   "version": "0.1.0",
   "private": true,
@@ -39,6 +39,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^4.0.0",
+    "sass": "^1.53.0"
   }
 }
