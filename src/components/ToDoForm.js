@@ -1,7 +1,6 @@
 // ToDoForm Component
 
 import React, { useState } from "react";
-import ToDoList from "./ToDoList";
 
 export default function ToDoForm({ addToDo }) {
   // Save our newly created to-do
