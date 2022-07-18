@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/vasilemidrigan/todo-app/static/css/main.a69f76e1.css",
+    "main.js": "/vasilemidrigan/todo-app/static/js/main.7123c979.js",
+    "index.html": "/vasilemidrigan/todo-app/index.html",
+    "static/media/icon-moon.svg": "/vasilemidrigan/todo-app/static/media/icon-moon.6c03114b495d05f4380b.svg",
+    "main.a69f76e1.css.map": "/vasilemidrigan/todo-app/static/css/main.a69f76e1.css.map",
+    "main.7123c979.js.map": "/vasilemidrigan/todo-app/static/js/main.7123c979.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a69f76e1.css",
+    "static/js/main.7123c979.js"
+  ]
+}
