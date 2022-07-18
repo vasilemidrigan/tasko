@@ -1,0 +1,18 @@
+.ToDo {
+  border: 1px solid lightgrey;
+
+  &__form {
+    &__label {
+      &__input {
+        float: left;
+      }
+    }
+  }
+  button {
+    cursor: pointer;
+  }
+}
+// If task is done
+.done {
+  text-decoration: line-through;
+}

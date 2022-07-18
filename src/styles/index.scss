@@ -1,0 +1,14 @@
+// index.scss
+
+// imports
+@import "./resets";
+@import "./globals";
+@import "./variables";
+
+// import components styles
+@import "./app";
+@import "./header";
+@import "./todoform";
+@import "./todolist";
+@import "./todo";
+@import "./filter";

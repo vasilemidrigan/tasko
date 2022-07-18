@@ -1,0 +1,21 @@
+.ToDoForm {
+  border: 1px solid lightgrey;
+  margin-bottom: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: $very-light-gray;
+  color: $dark-grayish-blue;
+  font-size: 0.8em;
+
+  display: flex;
+  align-items: center;
+  &__form {
+    margin-left: 20px;
+  }
+  input {
+    border: none;
+    font-size: 1.1em;
+    font-weight: 400;
+    margin-left: 10px;
+  }
+}
