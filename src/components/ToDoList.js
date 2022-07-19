@@ -9,10 +9,10 @@ import ToDoForm from "./ToDoForm";
 import Filter from "./Filter";
 
 export default function ToDoList({
+  taskCompleteStatus,
   toDoList,
   addToDo,
   deleteTask,
-  changeTaskStatus,
 }) {
   // ----------------------------------------------------
 
@@ -20,7 +20,14 @@ export default function ToDoList({
   //   ToDo components with necesarry props passed to them
 
   const task = toDoList.map((item) => {
-    return <ToDo key={item.id} item={item} deleteTask={deleteTask} />;
+    return (
+      <ToDo
+        key={item.id}
+        item={item}
+        taskCompleteStatus={taskCompleteStatus}
+        deleteTask={deleteTask}
+      />
+    );
   });
 
   // ----------------------------------------------------

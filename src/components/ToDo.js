@@ -2,7 +2,7 @@
 
 import React from "react";
 
-export default function ToDo({ item, deleteTask }) {
+export default function ToDo({ item, deleteTask, taskCompleteStatus }) {
   return (
     <div className="ToDo">
       {/* ToDo Form */}
@@ -16,6 +16,8 @@ export default function ToDo({ item, deleteTask }) {
             id={`todo-${item.id}`}
             className={`ToDo__form__label__input`}
             name="complete"
+            checked={item.complete}
+            onChange={() => taskCompleteStatus(item.id)}
           />
         </label>
         {/* Delete Button - delete task when clicked*/}
