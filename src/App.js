@@ -13,26 +13,6 @@ import ToDoList from "./components/ToDoList";
 export default function App() {
   const [toDoList, setToDoList] = useState(data);
 
-  // ---------------------------------------------------
-  // taskCompleteStatus(id) : change tasks completed status
-
-  // - Map over our tasks state and return an oposite value
-  //   of the tasks complete property
-  // - The function gives us the ability to mark our
-  //   tasks as completed and as well to apply
-  //   appropiate styles.
-
-  const taskCompleteStatus = (id) => {
-    const updateTodos = toDoList.map((todo) => {
-      if (todo.id === id) {
-        return { ...todo, complete: !todo.complete };
-      } else {
-        return todo;
-      }
-    });
-    setToDoList(updateTodos);
-  };
-
   // ----------------------------------------------------
   // Get an array of our current existed ID's
   // ! Will serve for addToDo() function bellow as an
@@ -69,6 +49,7 @@ export default function App() {
     }
     return newIDs[0];
   };
+
   // ----------------------------------------------------
 
   // addToDo(newToDo) : Add a new task
@@ -89,6 +70,26 @@ export default function App() {
         { id: newID(existedIds), task: newToDo, complete: false },
       ];
     });
+  };
+
+  // ---------------------------------------------------
+  // taskCompleteStatus(id) : change tasks completed status
+
+  // - Map over our tasks state and return an oposite value
+  //   of the tasks complete property
+  // - The function gives us the ability to mark our
+  //   tasks as completed and as well to apply
+  //   appropiate styles.
+
+  const taskCompleteStatus = (id) => {
+    const updateTodos = toDoList.map((todo) => {
+      if (todo.id === id) {
+        return { ...todo, complete: !todo.complete };
+      } else {
+        return todo;
+      }
+    });
+    setToDoList(updateTodos);
   };
 
   // ----------------------------------------------------

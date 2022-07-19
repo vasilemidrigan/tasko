@@ -16,7 +16,7 @@ export default function ToDoForm({ addToDo }) {
   // - cancel default behaviour of form submit
   // - run addToDo(newToDo)(see the func. in the App Component)
   //   in order to add new to-do to our to-do list
-  // - then set newToDo state to back to an empty string
+  // - then set newToDo state back to an empty string
   const handleSubmit = (e) => {
     e.preventDefault();
     addToDo(newToDo);
