@@ -6,8 +6,6 @@ export default function ToDoForm({ addToDo }) {
   // Save our newly created to-do
   const [newToDo, setNewToDo] = useState("");
 
-  console.log(newToDo);
-
   // ----------------------------------------------------
 
   // handleSubmit:
