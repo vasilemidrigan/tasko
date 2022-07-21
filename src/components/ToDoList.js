@@ -54,11 +54,19 @@ export default function ToDoList({
     );
   });
   // ----------------------------------------------------
+  // We're using this variable to track remaining tasks
+  //   and show them to user.
+  const tasksAmount = toDoList.filter((task) => {
+    return !task.complete;
+  }).length;
 
   return (
     <div className="ToDoList">
       <ToDoForm toDoList={toDoList} addToDo={addToDo} />
       {taskList}
+      <div className="ToDoList__bottom-bar">
+        <span className="ToDoList__bottom-bar__items-left">{`${tasksAmount} items left`}</span>
+      </div>
       {filterBtns}
     </div>
   );

@@ -6,4 +6,16 @@
   text-align: center;
   width: 90%;
   margin: 0 auto;
+  // temporary styles
+  &__bottom-bar {
+    margin: 30px;
+    &__items-left {
+      margin: 10px;
+      border: 1px solid grey;
+    }
+    &__clear-completed {
+      margin: 10px;
+      border: 1px solid grey;
+    }
+  }
 }
