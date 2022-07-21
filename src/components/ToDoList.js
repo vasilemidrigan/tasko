@@ -46,6 +46,8 @@ export default function ToDoList({
     );
   });
   // ----------------------------------------------------
+  // Create button components for each of our filter
+
   const filterBtns = FILTER_NAMES.map((name) => {
     return (
       <FilterBtn key={name} name={name} setActiveFilter={setActiveFilter} />
