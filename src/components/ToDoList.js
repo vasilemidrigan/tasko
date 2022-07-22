@@ -24,6 +24,7 @@ export default function ToDoList({
   toDoList,
   addToDo,
   deleteTask,
+  clearCompleted,
 }) {
   // ----------------------------------------------------
   // Filter state for our tasks: All, Active, Completed
@@ -59,6 +60,7 @@ export default function ToDoList({
   const tasksAmount = toDoList.filter((task) => {
     return !task.complete;
   }).length;
+  // ----------------------------------------------------
 
   return (
     <div className="ToDoList">
@@ -66,6 +68,12 @@ export default function ToDoList({
       {taskList}
       <div className="ToDoList__bottom-bar">
         <span className="ToDoList__bottom-bar__items-left">{`${tasksAmount} items left`}</span>
+        <span
+          className="ToDoList__bottom-bar__clear-completed"
+          onClick={clearCompleted}
+        >
+          Clear Completed
+        </span>
       </div>
       {filterBtns}
     </div>

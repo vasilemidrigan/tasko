@@ -114,7 +114,14 @@ export default function App() {
     });
     setToDoList(updateArray);
   }
-
+  // ----------------------------------------------------
+  // clearCompleted() : clear completed tasks function
+  const clearCompleted = () => {
+    const activeTasks = toDoList.filter((task) => {
+      return !task.complete;
+    });
+    setToDoList(activeTasks);
+  };
   // ----------------------------------------------------
 
   return (
@@ -123,8 +130,10 @@ export default function App() {
       <ToDoList
         taskCompleteStatus={taskCompleteStatus}
         toDoList={toDoList}
+        setToDoList={setToDoList}
         addToDo={addToDo}
         deleteTask={deleteTask}
+        clearCompleted={clearCompleted}
       />
     </div>
   );
