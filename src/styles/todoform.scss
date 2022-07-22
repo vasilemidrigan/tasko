@@ -11,11 +11,17 @@
   align-items: center;
   &__form {
     margin-left: 20px;
+    & label {
+      display: flex;
+      align-items: center;
+    }
   }
-  input {
-    border: none;
-    font-size: 1.1em;
-    font-weight: 400;
+  // Create new todo input field
+  &__form__input {
     margin-left: 10px;
+
+    &::placeholder {
+      color: $light-grayish-blue;
+    }
   }
 }

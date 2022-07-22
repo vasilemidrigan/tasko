@@ -1,6 +1,9 @@
 .ToDo {
   border: 1px solid lightgrey;
-
+  height: 55px;
+  &:nth-child(2) {
+    border-radius: 7px 7px 0px 0px;
+  }
   &__form {
     &__label {
       &__input {
@@ -8,11 +11,4 @@
       }
     }
   }
-  button {
-    cursor: pointer;
-  }
-}
-// If task is done
-.done {
-  text-decoration: line-through;
 }

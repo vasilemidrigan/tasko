@@ -47,9 +47,10 @@ export default function ToDoForm({ addToDo }) {
           {/* Input */}
           <input
             type="text"
+            className="ToDoForm__form__input"
             value={newToDo}
             onChange={handleChange}
-            placeholder="Create a new task..."
+            placeholder="Create a new todo..."
           />
         </label>
       </form>
