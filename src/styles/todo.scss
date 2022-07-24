@@ -1,6 +1,6 @@
 .ToDo {
   border-bottom: 1px solid lightgrey;
-  height: 55px;
+  min-height: 55px;
   display: flex;
   align-items: center;
   &:nth-child(1) {
@@ -18,7 +18,13 @@
       align-items: center;
       flex-direction: row-reverse;
       &__task {
+        max-width: 90%;
+        word-wrap: normal;
+        white-space: initial;
         margin-left: 0.9375rem;
+        p {
+          max-width: 230px;
+        }
       }
     }
     // X button (delete task button)

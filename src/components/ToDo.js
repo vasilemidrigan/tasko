@@ -16,7 +16,7 @@ export default function ToDo({ item, deleteTask, taskCompleteStatus }) {
                 : "ToDo__form__label__task"
             }
           >
-            {item.task}
+            <p>{item.task}</p>
           </div>
           {/* Input */}
           <input
