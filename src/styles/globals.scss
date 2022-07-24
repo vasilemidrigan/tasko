@@ -19,6 +19,7 @@ input {
 }
 // Checkboxes
 input[type="checkbox"] {
+  @include display-flex(center, center);
   appearance: none;
   margin: 0;
   width: 22px;
@@ -26,17 +27,13 @@ input[type="checkbox"] {
   border: 1.5px solid $very-light-grayish-blue;
   border-radius: 50%;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 input[type="checkbox"]::after {
   font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 11px;
+  font-size: 14px;
   color: $very-light-gray;
   content: "\f00c";
-  display: none;
+  // display: none;
 }
 input[type="checkbox"]:checked:after {
   display: block;
@@ -48,6 +45,7 @@ input:checked {
 button {
   cursor: pointer;
 }
+// - Visibility
 // If a task is complete then apply the styles below
 .complete {
   text-decoration: line-through;

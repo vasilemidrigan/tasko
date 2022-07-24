@@ -1,0 +1,21 @@
+// Mixins
+
+// display-flex
+@mixin display-flex($jc, $ai) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+}
+// position: absolute;
+@mixin position-absolute($top, $right, $bottom, $left) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+// widths
+@mixin min-max-width($min-w, $max-w) {
+  min-width: $min-w;
+  max-width: $max-w;
+}

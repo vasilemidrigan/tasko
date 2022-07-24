@@ -1,25 +1,16 @@
 .ToDoList {
-  position: absolute;
-  top: 100px;
-  right: 50%;
+  @include position-absolute(50%, 50%, unset, unset);
+  @include min-max-width(20.625rem, 25rem);
   transform: translate(50%, 0%);
-  text-align: center;
   width: 90%;
-  min-width: 330px;
-  max-width: 400px;
+  text-align: center;
   margin: 0 auto;
-  &__tasklist__wrapper {
-    // to apply styles
-  }
   &__bottom-bar {
+    @include display-flex(unset, center);
     border-radius: 0px 0px 7px 7px;
     height: 55px;
-    display: flex;
-    align-items: center;
     &__spans {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      @include display-flex(space-between, center);
       width: 90%;
       margin: 0 auto;
       &__items-left {
@@ -32,11 +23,9 @@
     }
   }
   .ToDoList__Filter {
+    @include display-flex(center, center);
     height: 50px;
     margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 7px;
   }
 }

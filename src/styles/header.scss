@@ -1,20 +1,15 @@
 .Header {
+  @include display-flex(center, unset);
   background-image: url("../assets/images/bg-mobile-light.jpg");
   background-repeat: no-repeat;
   background-size: 100% 200px;
-  // width: 100%;
   height: 200px;
   color: $very-light-gray;
-  // position: relative;
-  display: flex;
-  justify-content: center;
   &__content {
-    position: absolute;
+    @include min-max-width(20.625rem, 25rem);
+    @include position-absolute(22%, unset, unset, unset);
     width: 90%;
-    top: 22%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include display-flex(space-between, center);
     &__h1 {
       font-size: 2em;
       font-weight: $bold;
