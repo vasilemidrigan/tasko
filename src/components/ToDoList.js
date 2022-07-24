@@ -64,17 +64,23 @@ export default function ToDoList({
 
   return (
     <div className="ToDoList">
+      {/* to-do form (create a new task) */}
       <ToDoForm toDoList={toDoList} addToDo={addToDo} />
-      {taskList}
-      <div className="ToDoList__bottom-bar">
-        <span className="ToDoList__bottom-bar__items-left">{`${tasksAmount} items left`}</span>
-        <span
-          className="ToDoList__bottom-bar__clear-completed"
-          onClick={clearCompleted}
-        >
-          Clear Completed
-        </span>
+      {/* to-do list */}
+      <div className="ToDoList__tasklist__wrapper">
+        {taskList}
+        {/* track items left and clear completed section */}
+        <div className="ToDoList__bottom-bar">
+          <span className="ToDoList__bottom-bar__items-left">{`${tasksAmount} items left`}</span>
+          <span
+            className="ToDoList__bottom-bar__clear-completed"
+            onClick={clearCompleted}
+          >
+            Clear Completed
+          </span>
+        </div>
       </div>
+      {/* filter section */}
       {filterBtns}
     </div>
   );
