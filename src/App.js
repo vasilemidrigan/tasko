@@ -107,10 +107,25 @@ export default function App() {
   // - Then it sets our toDoList to our newly created
   //   array
   // - Now our to-do list doesn't include the deleted to-do
+  // - NOTE! The content of our buttons is 2 spans which
+  //         draws the x sign(see todo.scss), so when the span
+  //         is clicked instead of button, if statement
+  //         catches that event and it watches for
+  //         parent element of the current clicked span
+  //         which is the button element obviously,
+  //         and so now it can compare the id of the
+  //         button and the current todo element in the
+  //         map.
 
   function deleteTask(e) {
+    const spanIsClicked = e.target.childNodes.length === 0;
+    const spansParentId = e.target.parentNode.id;
     const updateArray = toDoList.filter((el) => {
-      return el.id != e.target.id;
+      if (spanIsClicked) {
+        return el.id != spansParentId;
+      } else {
+        return el.id != e.target.id;
+      }
     });
     setToDoList(updateArray);
   }
