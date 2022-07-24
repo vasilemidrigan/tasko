@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/todo-app/static/css/main.0fc33cbf.css",
-    "main.js": "/todo-app/static/js/main.8e563c09.js",
+    "main.css": "/todo-app/static/css/main.484818d6.css",
+    "main.js": "/todo-app/static/js/main.ecb196a7.js",
     "index.html": "/todo-app/index.html",
     "static/media/icon-moon.svg": "/todo-app/static/media/icon-moon.6c03114b495d05f4380b.svg",
-    "main.0fc33cbf.css.map": "/todo-app/static/css/main.0fc33cbf.css.map",
-    "main.8e563c09.js.map": "/todo-app/static/js/main.8e563c09.js.map"
+    "main.484818d6.css.map": "/todo-app/static/css/main.484818d6.css.map",
+    "main.ecb196a7.js.map": "/todo-app/static/js/main.ecb196a7.js.map"
   },
   "entrypoints": [
-    "static/css/main.0fc33cbf.css",
-    "static/js/main.8e563c09.js"
+    "static/css/main.484818d6.css",
+    "static/js/main.ecb196a7.js"
   ]
 }
