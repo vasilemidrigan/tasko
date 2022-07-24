@@ -71,17 +71,19 @@ export default function ToDoList({
         {taskList}
         {/* track items left and clear completed section */}
         <div className="ToDoList__bottom-bar">
-          <span className="ToDoList__bottom-bar__items-left">{`${tasksAmount} items left`}</span>
-          <span
-            className="ToDoList__bottom-bar__clear-completed"
-            onClick={clearCompleted}
-          >
-            Clear Completed
-          </span>
+          <div className="ToDoList__bottom-bar__spans">
+            <span className="ToDoList__bottom-bar__spans__items-left">{`${tasksAmount} items left`}</span>
+            <span
+              className="ToDoList__bottom-bar__spans__clear-completed"
+              onClick={clearCompleted}
+            >
+              Clear Completed
+            </span>
+          </div>
         </div>
       </div>
       {/* filter section */}
-      {filterBtns}
+      <div className="ToDoList__Filter">{filterBtns}</div>
     </div>
   );
 }

@@ -7,6 +7,9 @@ html {
   font-family: "Josefin Sans", sans-serif;
   font-size: 0.875rem;
 }
+body {
+  background-color: #f9f9f9;
+}
 // Inputs
 input {
   font-size: 11px;
@@ -48,4 +51,16 @@ button {
 // If a task is complete then apply the styles below
 .complete {
   text-decoration: line-through;
+  color: $light-grayish-blue;
+}
+// If a filter button is clicked then change text color
+.clicked {
+  color: $bright-blue;
+}
+// Components common styles
+.ToDoForm,
+.ToDo,
+.ToDoList__bottom-bar,
+.ToDoList__Filter {
+  background-color: $white;
 }

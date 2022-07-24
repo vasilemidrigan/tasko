@@ -12,7 +12,30 @@
   }
   &__bottom-bar {
     border-radius: 0px 0px 7px 7px;
-    border: 1px solid lightgray;
     height: 55px;
+    display: flex;
+    align-items: center;
+    &__spans {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      margin: 0 auto;
+      &__items-left {
+        margin-left: 6px;
+      }
+      &__items-left,
+      &__clear-completed {
+        color: $light-grayish-blue;
+      }
+    }
+  }
+  .ToDoList__Filter {
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
   }
 }

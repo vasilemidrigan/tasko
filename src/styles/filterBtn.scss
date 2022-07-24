@@ -1,6 +1,9 @@
 .filter__btn {
-  border: 1px solid lightgrey;
+  border: none;
+  background-color: unset;
   height: 30px;
-  margin-top: 200px;
   margin-right: 10px;
+  font-size: 1.1em;
+  font-weight: $bold;
+  color: $dark-grayish-blue;
 }
