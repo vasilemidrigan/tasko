@@ -4,15 +4,14 @@ export default function FilterBtn({ name, setActiveFilter }) {
   // changeColor(): change text color of the clicked
   //                filter btn
   const changeColor = (e) => {
-    const btns = e.target.parentElement.parentElement.childNodes;
+    const btns = document.querySelectorAll(".filter__btn");
     const target = e.target;
 
     for (let i = 0; i < btns.length; i++) {
-      let currentEl = btns[i].childNodes[0];
-      if (target.textContent !== currentEl.textContent) {
-        currentEl.classList.remove("clicked");
-      } else if (target.textContent === currentEl.textContent) {
-        currentEl.classList.add("clicked");
+      if (target === btns[i].children[0]) {
+        btns[i].children[0].classList.add("clicked");
+      } else {
+        btns[i].children[0].classList.remove("clicked");
       }
     }
   };

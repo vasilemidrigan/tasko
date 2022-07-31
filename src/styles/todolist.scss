@@ -5,6 +5,13 @@
   width: 90%;
   text-align: center;
   margin: 0 auto;
+  // media queries min-width: 1024px;
+  @include breakpoint-up(large) {
+    @include min-max-width(25rem, 31.25rem);
+  }
+  // bottom-bar
+  // (items left tracker and clear completed button)
+
   &__bottom-bar {
     @include display-flex(unset, center);
     border-radius: 0px 0px 7px 7px;
@@ -19,6 +26,10 @@
       &__items-left,
       &__clear-completed {
         color: $light-grayish-blue;
+        // media queries for screens larger than 1024px
+        @include breakpoint-up(large) {
+          font-size: 0.85rem;
+        }
       }
     }
   }
@@ -27,5 +38,11 @@
     height: 50px;
     margin-top: 20px;
     border-radius: 7px;
+    // media queries for screens larger than 1024px
+    @include breakpoint-up(large) {
+      @include position-absolute(unset, 50%, 2.5px, unset);
+      transform: translate(50%);
+      font-size: 0.85rem;
+    }
   }
 }

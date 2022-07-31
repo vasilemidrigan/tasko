@@ -5,11 +5,22 @@
   background-size: 100% 200px;
   height: 200px;
   color: $very-light-gray;
+  margin: 0 auto;
+  @include min-max-width(unset, 26.875rem);
+  // media queries for screens larger than 1024px
+  @include breakpoint-up(large) {
+    background-image: url("../assets/images/bg-desktop-light.jpg");
+    @include min-max-width(unset, unset);
+  }
   &__content {
     @include min-max-width(20.625rem, 25rem);
     @include position-absolute(22%, unset, unset, unset);
-    width: 90%;
     @include display-flex(space-between, center);
+    width: 90%;
+    // media queries for screens larger than 1024px
+    @include breakpoint-up(large) {
+      @include min-max-width(unset, 31.2188rem);
+    }
     &__h1 {
       font-size: 2em;
       font-weight: $bold;

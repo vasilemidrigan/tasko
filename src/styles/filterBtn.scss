@@ -2,8 +2,16 @@
   border: none;
   background-color: unset;
   height: 30px;
-  margin-right: 10px;
   font-size: 1.1em;
   font-weight: $bold;
   color: $dark-grayish-blue;
+  padding: 0;
+  margin: 10px;
+
+  span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 30px;
+  }
 }
