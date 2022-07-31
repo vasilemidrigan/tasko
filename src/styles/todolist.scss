@@ -23,6 +23,10 @@
       &__items-left {
         margin-left: 6px;
       }
+      &__clear-completed:hover {
+        cursor: pointer;
+        color: $very-dark-grayish-blue;
+      }
       &__items-left,
       &__clear-completed {
         color: $light-grayish-blue;

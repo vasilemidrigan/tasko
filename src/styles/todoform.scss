@@ -15,8 +15,9 @@
     &__input {
       margin-left: 10px;
       font-size: 1.2em;
-      color: $very-dark-grayish-blue;
+      color: $dark-grayish-blue;
       width: 85%;
+      caret-color: $bright-blue;
       &::placeholder {
         color: $light-grayish-blue;
       }

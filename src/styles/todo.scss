@@ -17,6 +17,9 @@
         max-width: 90%;
         white-space: initial;
         margin-left: 0.9375rem;
+        &:hover {
+          cursor: pointer;
+        }
         p {
           word-wrap: normal;
           text-align: left;

@@ -18,15 +18,17 @@ export default function ToDo({ item, deleteTask, taskCompleteStatus }) {
           >
             <p>{item.task}</p>
           </div>
-          {/* Input */}
-          <input
-            type="checkbox"
-            id={`todo-${item.id}`}
-            className={`ToDo__form__label__checkbox`}
-            name="complete"
-            checked={item.complete}
-            onChange={() => taskCompleteStatus(item.id)}
-          />
+          {/* Checkbox*/}
+          <div className="ToDo__form__label__checkbox">
+            <input
+              type="checkbox"
+              id={`todo-${item.id}`}
+              name="complete"
+              checked={item.complete}
+              onChange={() => taskCompleteStatus(item.id)}
+            />
+            <span></span>
+          </div>
         </label>
         {/* Delete Button - delete task when clicked*/}
         <button
