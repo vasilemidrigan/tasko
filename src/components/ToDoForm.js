@@ -43,7 +43,7 @@ export default function ToDoForm({ addToDo }) {
         {/* Label */}
         <label htmlFor="newToDo">
           {/* Checkbox */}
-          <input type="checkbox" id="newTodo" />
+          <input type="checkbox" id="newTodo" disabled />
           {/* Input */}
           <input
             type="text"
