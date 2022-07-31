@@ -15,11 +15,13 @@
       flex-direction: row-reverse;
       &__task {
         max-width: 90%;
-        word-wrap: normal;
         white-space: initial;
         margin-left: 0.9375rem;
         p {
+          word-wrap: normal;
+          text-align: left;
           max-width: 230px;
+          margin: 10px;
         }
       }
     }

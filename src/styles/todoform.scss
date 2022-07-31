@@ -6,17 +6,20 @@
   border-radius: 5px;
   font-size: 0.8em;
   &__form {
+    width: 100%;
     margin-left: 20px;
     & label {
       @include display-flex(unset, center);
     }
-  }
-  // Create new todo input field
-  &__form__input {
-    margin-left: 10px;
-
-    &::placeholder {
-      color: $light-grayish-blue;
+    // Create new todo field
+    &__input {
+      margin-left: 10px;
+      font-size: 1.2em;
+      color: $very-dark-grayish-blue;
+      width: 85%;
+      &::placeholder {
+        color: $light-grayish-blue;
+      }
     }
   }
 }
