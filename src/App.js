@@ -11,7 +11,10 @@ import Header from "./components/Header";
 import ToDoList from "./components/ToDoList";
 
 export default function App() {
+  // tasklist
   const [toDoList, setToDoList] = useState(data);
+  // toggle theme
+  const [theme, setTheme] = useState("light");
 
   // ----------------------------------------------------
   // Get an array of our current existed ID's
@@ -138,10 +141,16 @@ export default function App() {
     setToDoList(activeTasks);
   };
   // ----------------------------------------------------
+  // switch theme
+
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
+  // ----------------------------------------------------
 
   return (
-    <div className="App">
-      <Header />
+    <div className={`App ${theme}`} data-theme={theme}>
+      <Header theme={theme} toggleTheme={toggleTheme} />
       <ToDoList
         taskCompleteStatus={taskCompleteStatus}
         toDoList={toDoList}

@@ -1,3 +1,11 @@
 .App {
   position: relative;
+  height: 100vh;
+  min-height: 815px;
+}
+// ----------------------------------------
+// -------------- DARK THEME --------------
+// ----------------------------------------
+.dark {
+  background-color: $very-dark-blue;
 }

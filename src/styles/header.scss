@@ -14,7 +14,7 @@
   }
   &__content {
     @include min-max-width(20.625rem, 25rem);
-    @include position-absolute(22%, unset, unset, unset);
+    @include position-absolute(40px, unset, unset, unset);
     @include display-flex(space-between, center);
     width: 90%;
     // media queries for screens larger than 1024px
@@ -31,6 +31,21 @@
       background-size: 22px 22px;
       width: 22px;
       height: 22px;
+      cursor: pointer;
+    }
+  }
+}
+// ----------------------------------------
+// -------------- DARK THEME --------------
+// ----------------------------------------
+.dark {
+  .Header {
+    background-image: url("../assets/images/bg-desktop-dark.jpg");
+    @include breakpoint-up(large) {
+      background-image: url("../assets/images/bg-desktop-dark.jpg");
+    }
+    &__content__theme-switcher {
+      background-image: url(../assets/images/icon-sun.svg);
     }
   }
 }

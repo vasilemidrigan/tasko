@@ -9,7 +9,9 @@ html {
 }
 body {
   background-color: #f9f9f9;
+  height: 100vh;
 }
+
 // Inputs
 input {
   font-size: 11px;
@@ -17,6 +19,7 @@ input {
   border: none;
   outline: none;
 }
+
 // Checkboxes
 input[type="checkbox"] {
   @include display-flex(center, center);
@@ -33,7 +36,7 @@ input[type="checkbox"]::after {
   font-size: 11px;
   color: $very-light-gray;
   content: "\f00c";
-  // display: none;
+  display: none;
 }
 input[type="checkbox"]:checked:after {
   display: block;
@@ -41,24 +44,54 @@ input[type="checkbox"]:checked:after {
 input:checked {
   background: linear-gradient(135deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
 }
+
 // Buttons
 button {
   cursor: pointer;
 }
+
 // - Visibility
 // If a task is complete then apply the styles below
 .complete {
   text-decoration: line-through;
   color: $light-grayish-blue;
 }
-// If a filter button is clicked then change text color
+
+// change color for filter button when clicked
 .clicked {
   color: $bright-blue;
 }
+
 // Components common styles
 .ToDoForm,
 .ToDo,
 .ToDoList__bottom-bar,
 .ToDoList__Filter {
   background-color: $white;
+}
+
+// ----------------------------------------
+// -------------- DARK THEME --------------
+// ----------------------------------------
+
+.dark {
+  // body
+  body {
+    background-color: $very-dark-blue;
+  }
+  // Components common styles
+  .ToDoForm,
+  .ToDo,
+  .ToDoList__bottom-bar,
+  .ToDoList__Filter {
+    background-color: $very-dark-desaturated-blue;
+  }
+  // checkboxes
+  input[type="checkbox"] {
+    border: 1px solid $very-dark-grayish-blue;
+  }
+  // complete task
+  .complete {
+    color: $dark-grayish-blue;
+  }
 }

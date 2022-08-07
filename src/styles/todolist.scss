@@ -1,5 +1,5 @@
 .ToDoList {
-  @include position-absolute(50%, 50%, unset, unset);
+  @include position-absolute(10.5%, 50%, unset, unset);
   @include min-max-width(20.625rem, 25rem);
   transform: translate(50%, 0%);
   width: 90%;
@@ -48,5 +48,13 @@
       transform: translate(50%);
       font-size: 0.85rem;
     }
+  }
+}
+// ----------------------------------------
+// -------------- DARK THEME --------------
+// ----------------------------------------
+.dark {
+  .ToDoList__bottom-bar__spans span {
+    color: $dark-grayish-blue;
   }
 }

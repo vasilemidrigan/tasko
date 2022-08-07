@@ -52,3 +52,19 @@
     }
   }
 }
+// ----------------------------------------
+// -------------- DARK THEME --------------
+// ----------------------------------------
+.dark {
+  .ToDo {
+    border-bottom: 1px solid $very-dark-grayish-blue;
+    &__form__label__task {
+      p {
+        color: $light-grayish-blue;
+      }
+    }
+    .complete p {
+      color: $dark-grayish-blue-dt;
+    }
+  }
+}

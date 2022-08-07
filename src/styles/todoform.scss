@@ -1,6 +1,5 @@
 .ToDoForm {
   @include display-flex(unset, center);
-  border: 1px solid lightgrey;
   margin-bottom: 20px;
   height: 50px;
   border-radius: 5px;
@@ -20,6 +19,20 @@
       caret-color: $bright-blue;
       &::placeholder {
         color: $light-grayish-blue;
+      }
+    }
+  }
+}
+// ----------------------------------------
+// -------------- DARK THEME --------------
+// ----------------------------------------
+.dark {
+  .ToDoForm {
+    &__form__input {
+      background-color: $very-dark-desaturated-blue;
+      &::placeholder {
+        background-color: $very-dark-desaturated-blue;
+        color: $dark-grayish-blue;
       }
     }
   }
