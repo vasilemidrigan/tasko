@@ -12,39 +12,38 @@ body {
   height: 100vh;
 }
 
-// Inputs
 input {
+  // Inputs
   font-size: 11px;
   font-weight: $bold;
   border: none;
   outline: none;
-}
-
-// Checkboxes
-input[type="checkbox"] {
-  @include display-flex(center, center);
-  appearance: none;
-  margin: 0;
-  width: 22px;
-  height: 22px;
-  border: 1.5px solid $very-light-grayish-blue;
-  border-radius: 50%;
-  cursor: pointer;
-  &::after {
-    font-family: "Font Awesome 5 Free";
-    font-size: 11px;
-    color: $very-light-gray;
-    content: "\f00c";
-    display: none;
-  }
-  &:checked {
-    background: linear-gradient(
-      135deg,
-      hsl(192, 100%, 67%),
-      hsl(280, 87%, 65%)
-    );
-    &:after {
-      display: block;
+  // Checkboxes
+  &[type="checkbox"] {
+    @include display-flex(center, center);
+    appearance: none;
+    margin: 0;
+    width: 22px;
+    height: 22px;
+    border: 1.5px solid $very-light-grayish-blue;
+    border-radius: 50%;
+    cursor: pointer;
+    &::after {
+      font-family: "Font Awesome 5 Free";
+      font-size: 11px;
+      color: $very-light-gray;
+      content: "\f00c";
+      display: none;
+    }
+    &:checked {
+      background: linear-gradient(
+        135deg,
+        hsl(192, 100%, 67%),
+        hsl(280, 87%, 65%)
+      );
+      &:after {
+        display: block;
+      }
     }
   }
 }
