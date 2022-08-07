@@ -30,19 +30,23 @@ input[type="checkbox"] {
   border: 1.5px solid $very-light-grayish-blue;
   border-radius: 50%;
   cursor: pointer;
-}
-input[type="checkbox"]::after {
-  font-family: "Font Awesome 5 Free";
-  font-size: 11px;
-  color: $very-light-gray;
-  content: "\f00c";
-  display: none;
-}
-input[type="checkbox"]:checked:after {
-  display: block;
-}
-input:checked {
-  background: linear-gradient(135deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  &::after {
+    font-family: "Font Awesome 5 Free";
+    font-size: 11px;
+    color: $very-light-gray;
+    content: "\f00c";
+    display: none;
+  }
+  &:checked {
+    background: linear-gradient(
+      135deg,
+      hsl(192, 100%, 67%),
+      hsl(280, 87%, 65%)
+    );
+    &:after {
+      display: block;
+    }
+  }
 }
 
 // Buttons
