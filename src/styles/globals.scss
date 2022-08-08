@@ -27,6 +27,7 @@ input {
     height: 22px;
     border: 1.5px solid $very-light-grayish-blue;
     border-radius: 50%;
+    cursor: pointer;
     &::after {
       font-family: "Font Awesome 5 Free";
       font-size: 11px;
@@ -45,8 +46,7 @@ input {
       }
     }
     // hover state (for checked/unchecked checkboxes)
-    &:hover:not(:checked),
-    &:hover:checked {
+    &:hover {
       border: 1px solid transparent;
       background: linear-gradient(
         135deg,
