@@ -27,7 +27,6 @@ input {
     height: 22px;
     border: 1.5px solid $very-light-grayish-blue;
     border-radius: 50%;
-    cursor: pointer;
     &::after {
       font-family: "Font Awesome 5 Free";
       font-size: 11px;
@@ -44,6 +43,24 @@ input {
       &:after {
         display: block;
       }
+    }
+    // hover state (for checked/unchecked checkboxes)
+    &:hover:not(:checked),
+    &:hover:checked {
+      border: 1px solid transparent;
+      background: linear-gradient(
+        135deg,
+        hsl(192, 100%, 67%),
+        hsl(280, 87%, 65%)
+      );
+      mask-composite: exclude;
+      -webkit-mask-composite: xor;
+    }
+    &:hover:checked {
+      border: 0.5px solid transparent;
+    }
+    &:hover:not(:checked) {
+      mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
     }
   }
 }

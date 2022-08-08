@@ -17,6 +17,7 @@
       color: $prgrf-color;
       margin-left: 1.5rem;
       flex-direction: row-reverse;
+      cursor: pointer;
       &__task {
         max-width: 90%;
         white-space: initial;
