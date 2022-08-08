@@ -1,0 +1,39 @@
+// ------------------------------------------------
+// --- Animation (betweem toggle light/dark themes)
+// ------------------------------------------------
+
+// background-color transitions
+.App,
+.ToDoForm__input,
+.ToDoForm__input::placeholder {
+  transition: background-color 200ms ease-in-out;
+}
+
+// background-image transitions
+.Header {
+  transition: background-image 400ms ease-in-out;
+  &__content__theme-switcher {
+    transition: background-image 200ms ease-in-out;
+  }
+}
+
+// color transitions
+.ToDoList__bottom-bar__spans span,
+.ToDoForm__form__input::placeholder,
+.ToDo__form__label__task p,
+.filter-btn span {
+  transition: color 200ms ease-in-out;
+}
+
+// border transitions
+input[type="checkbox"] {
+  transition: border 200ms ease-in-out;
+}
+.ToDo {
+  transition: border-bottom 200ms ease-in-out;
+}
+
+// opacity transitions
+.ToDo__form__delete-btn {
+  transition: opacity 100ms ease-in-out;
+}

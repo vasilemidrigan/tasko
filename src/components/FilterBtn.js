@@ -4,7 +4,7 @@ export default function FilterBtn({ name, setActiveFilter }) {
   // changeColor(): change text color of the clicked
   //                filter btn
   const changeColor = (e) => {
-    const btns = document.querySelectorAll(".filter__btn");
+    const btns = document.querySelectorAll(".filter-btn");
     const target = e.target;
 
     for (let i = 0; i < btns.length; i++) {
@@ -19,7 +19,7 @@ export default function FilterBtn({ name, setActiveFilter }) {
   return (
     <button
       type="button"
-      className="filter__btn"
+      className="filter-btn"
       onClick={(event) => {
         setActiveFilter(name);
         changeColor(event);
