@@ -9,9 +9,14 @@
   @include breakpoint-up(large) {
     @include min-max-width(25rem, 31.25rem);
   }
+  // hide delete btns when a tasklist section is hovered
+  &__tasklist__wrapper:hover {
+    .ToDo__form__delete-btn {
+      opacity: 0;
+    }
+  }
   // bottom-bar
-  // (items left tracker and clear completed button)
-
+  // (items left tracker, and clear completed button)
   &__bottom-bar {
     @include display-flex(unset, center);
     border-radius: 0px 0px 7px 7px;
