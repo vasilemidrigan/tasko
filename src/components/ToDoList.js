@@ -1,8 +1,9 @@
 // ToDoList Component
 
 // Imports:
-// - react
+// - packages
 import React, { useState } from "react";
+import { Reorder } from "framer-motion";
 // - components
 import ToDo from "./ToDo";
 import ToDoForm from "./ToDoForm";
@@ -22,6 +23,7 @@ const FILTER_NAMES = Object.keys(FILTERS);
 export default function ToDoList({
   taskCompleteStatus,
   toDoList,
+  setToDoList,
   addToDo,
   deleteTask,
   clearCompleted,
@@ -30,22 +32,6 @@ export default function ToDoList({
   // Filter state for our tasks: All, Active, Completed
   const [activeFilter, setActiveFilter] = useState("All");
 
-  // ----------------------------------------------------
-  // - apply filter to our toDoList and then map through
-  //   our filtered tasks already
-  // - map over our toDoList array and return
-  //   ToDo components with necesarry props passed to them
-
-  const taskList = toDoList.filter(FILTERS[activeFilter]).map((item) => {
-    return (
-      <ToDo
-        key={item.id}
-        item={item}
-        taskCompleteStatus={taskCompleteStatus}
-        deleteTask={deleteTask}
-      />
-    );
-  });
   // ----------------------------------------------------
   // Create button components for each of our filter
 
@@ -61,15 +47,37 @@ export default function ToDoList({
     return !task.complete;
   }).length;
   // ----------------------------------------------------
-
+  console.log(toDoList);
   return (
     <div className="ToDoList">
       {/* to-do form (create a new task) */}
       <ToDoForm toDoList={toDoList} addToDo={addToDo} />
       {/* to-do list */}
       <div className="ToDoList__tasklist__wrapper">
-        {taskList}
-        {/* track items left and clear completed section */}
+        {/* framer-motion - implemented drag and drop */}
+        <Reorder.Group
+          axis="y"
+          values={toDoList}
+          onReorder={setToDoList}
+          className="ToDoList__tasklist__wrapper__dnd"
+        >
+          {toDoList.filter(FILTERS[activeFilter]).map((item) => {
+            return (
+              <Reorder.Item
+                value={item}
+                key={item.id}
+                className="ToDoList__tasklist__wrapper__dnd__task"
+              >
+                <ToDo
+                  item={item}
+                  taskCompleteStatus={taskCompleteStatus}
+                  deleteTask={deleteTask}
+                />
+              </Reorder.Item>
+            );
+          })}
+        </Reorder.Group>
+        {/* track items left, and clear completed section */}
         <div className="ToDoList__bottom-bar">
           <div className="ToDoList__bottom-bar__spans">
             <span className="ToDoList__bottom-bar__spans__items-left">{`${tasksAmount} items left`}</span>

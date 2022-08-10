@@ -3,6 +3,7 @@
 // Imports:
 // - react
 import React, { useState } from "react";
+// - styles
 import "./styles/index.scss";
 // - data
 import data from "./data.json";

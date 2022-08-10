@@ -9,10 +9,12 @@
   @include breakpoint-up(large) {
     @include min-max-width(25rem, 31.25rem);
   }
-  // hide delete btns when a tasklist section is hovered
-  &__tasklist__wrapper:hover {
-    .ToDo__form__delete-btn {
-      opacity: 0;
+  &__tasklist__wrapper {
+    // hide delete btns when a tasklist section is hovered
+    &:hover {
+      .ToDo__form__delete-btn {
+        opacity: 0;
+      }
     }
   }
   // bottom-bar
