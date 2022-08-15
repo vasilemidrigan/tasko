@@ -8,7 +8,7 @@ export default function Header({ toggleTheme }) {
       <div className="Header__content">
         <h1 className="Header__content__h1">T O D O </h1>
         <div
-          className="Header__content__theme-switcher"
+          className="Header__content__theme-switcher ns"
           onClick={toggleTheme}
         ></div>
       </div>
