@@ -16,11 +16,23 @@ export default function FilterBtn({ name, setActiveFilter }) {
     }
   };
 
+  const x = () => {
+    console.log("hi");
+  };
+
   return (
     <button
       type="button"
       className="filter-btn ns"
+      // here we're using onClick() and onTouchEnd()
+      // for the same functions, just because we need
+      // to run them when clicking, as well as when
+      // touching.
       onClick={(event) => {
+        setActiveFilter(name);
+        changeColor(event);
+      }}
+      onTouchEnd={(event) => {
         setActiveFilter(name);
         changeColor(event);
       }}

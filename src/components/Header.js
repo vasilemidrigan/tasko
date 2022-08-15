@@ -2,7 +2,7 @@
 
 import React from "react";
 
-export default function Header({ theme, toggleTheme }) {
+export default function Header({ toggleTheme }) {
   return (
     <div className="Header">
       <div className="Header__content">
