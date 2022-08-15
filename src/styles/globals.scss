@@ -81,6 +81,12 @@ button {
   color: $bright-blue;
 }
 
+// set taped text color to transparent in order to
+// avoid selecting text (blue field) on touch
+.ns {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 // Components common styles
 .ToDoForm,
 .ToDo,

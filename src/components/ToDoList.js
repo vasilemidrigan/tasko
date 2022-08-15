@@ -47,7 +47,6 @@ export default function ToDoList({
     return !task.complete;
   }).length;
   // ----------------------------------------------------
-  console.log(toDoList);
   return (
     <div className="ToDoList">
       {/* to-do form (create a new task) */}
@@ -84,7 +83,7 @@ export default function ToDoList({
           <div className="ToDoList__bottom-bar__spans">
             <span className="ToDoList__bottom-bar__spans__items-left">{`${tasksAmount} items left`}</span>
             <span
-              className="ToDoList__bottom-bar__spans__clear-completed"
+              className="ToDoList__bottom-bar__spans__clear-completed ns"
               onClick={clearCompleted}
             >
               Clear Completed

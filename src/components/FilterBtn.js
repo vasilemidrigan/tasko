@@ -19,7 +19,7 @@ export default function FilterBtn({ name, setActiveFilter }) {
   return (
     <button
       type="button"
-      className="filter-btn"
+      className="filter-btn ns"
       onClick={(event) => {
         setActiveFilter(name);
         changeColor(event);

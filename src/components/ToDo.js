@@ -8,7 +8,7 @@ export default function ToDo({ item, deleteTask, taskCompleteStatus }) {
       {/* ToDo Form */}
       <form className="ToDo__form">
         {/* Label */}
-        <label className="ToDo__form__label" htmlFor={`todo-${item.id}`}>
+        <label className="ToDo__form__label ns" htmlFor={`todo-${item.id}`}>
           <div
             className={
               item.complete
