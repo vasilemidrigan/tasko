@@ -59,15 +59,14 @@ export default function ToDoList({
           axis="y"
           values={toDoList}
           onReorder={setToDoList}
-          className="ToDoList__tasklist__wrapper__dnd"
         >
           {toDoList.filter(FILTERS[activeFilter]).map((item) => {
             return (
               <Reorder.Item
                 as="div"
+                whileDrag={{ zIndex: 2 }}
                 value={item}
                 key={item.id}
-                className="ToDoList__tasklist__wrapper__dnd__task"
               >
                 <ToDo
                   item={item}
@@ -93,6 +92,7 @@ export default function ToDoList({
       </div>
       {/* filter section */}
       <div className="ToDoList__Filter">{filterBtns}</div>
+      {/* dnd hint */}
       <div className="ToDoList__dnd-hint ns">
         <span>Drag and drop to reorder list</span>
       </div>

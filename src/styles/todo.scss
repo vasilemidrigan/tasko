@@ -6,9 +6,6 @@
   &:hover &__form__delete-btn {
     opacity: 1;
   }
-  &:nth-child(1) {
-    border-radius: 7px 7px 0px 0px;
-  }
   &__form {
     @include display-flex(space-between, center);
     width: 100%;

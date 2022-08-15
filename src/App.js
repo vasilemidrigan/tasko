@@ -148,6 +148,11 @@ export default function App() {
     setTheme(theme === "light" ? "dark" : "light");
   };
   // ----------------------------------------------------
+  // If there's no more tasks in our app and we have
+  //   only the bottom bar, then we're applying border
+  //   radius to upper corners too.
+
+  // ----------------------------------------------------
 
   return (
     <div className={`App ${theme}`} data-theme={theme}>

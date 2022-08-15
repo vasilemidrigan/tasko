@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# 💥🔥⚡️ TODO APP Solution ⚡️🔥💥
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📜 Table of contents
 
-## Available Scripts
+- [💥🔥⚡️ TODO APP Solution ⚡️🔥💥](#️-todo-app-solution-️)
+  - [📜 Table of contents](#-table-of-contents)
+    - [🔗 Links](#-links)
+    - [📸 Screenshots](#-screenshots)
+      - [🖥 Desktop Version | ☾ Dark Theme](#-desktop-version---dark-theme)
+      - [🖥 Desktop Version | ☀︎ Light Theme](#-desktop-version--︎-light-theme)
+      - [📱 Mobile Version | ☾ Dark Theme](#-mobile-version---dark-theme)
+      - [📱 Mobile Version | ☀︎ Light Theme](#-mobile-version--︎-light-theme)
+  - [🏗 Process:](#-process)
+    - [🚀 Tech stack:](#-tech-stack)
+    - [📚 What I learned?](#-what-i-learned)
+  - [⚙️ App Functionality:](#️-app-functionality)
+  - [🖌 Author:](#-author)
 
-In the project directory, you can run:
+### 🔗 Links
 
-### `npm start`
+- [Click here to see github repository](https://github.com/vasilemidrigan/todo-app)
+- [Click here to open the app](https://vasilemidrigan.github.io/todo-app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 📸 Screenshots
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### 🖥 Desktop Version | ☾ Dark Theme
 
-### `npm test`
+<img src="./design/../images/screenshots/desk-version__dark-theme.png" width=800 height=500/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### 🖥 Desktop Version | ☀︎ Light Theme
 
-### `npm run build`
+<img src="./design/../images/screenshots/desk-version__light-theme.png" width=800 height=500/>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### 📱 Mobile Version | ☾ Dark Theme
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img src="./design/../images/screenshots/mob-version__dark-theme.png" width=380 height=600/>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### 📱 Mobile Version | ☀︎ Light Theme
 
-### `npm run eject`
+<img src="./design/../images/screenshots/mob-version__light-theme.png" width=380 height=600/>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🏗 Process:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 🚀 Tech stack:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- [ReactJS library](https://reactjs.org/) (as main technology)
+- [Framer-Motion](https://www.framer.com/motion/) (for drag and drop tasks functionality)
+- [Sass(scss) preprocessor](https://sass-lang.com/) (for styling)
+- [NPM](https://www.npmjs.com/) (node package manager)
+- Flexbox
+- CSS custom properties
+- Semantic HTML5 markup
+- Mobile-first workflow
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 📚 What I learned?
 
-## Learn More
+- How a Drag and Drop library generaly works, and how to implement it into a React App
+- React useState() Hook
+- React props
+- React forms
+- Implement dark/light mode feature
+- Right comments in our code makes it easier to read and mantain codebase
+- NPM basic manipulations
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## ⚙️ App Functionality:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- View the optimal layout for the app depending on their device's screen size
+- Hover states for all interactive elements on the page
+- Add new tasks to the list
+- Mark tasks as complete
+- Delete tasks from the list
+- Filter by all/active/complete tasks
+- Clear all completed tasks
+- Tracker active tasks left
+- Toggle light and dark mode
+- Drag and drop for reordering items on the list
 
-### Code Splitting
+<img src="./design/../images/screenshots/recording.gif" width=470 height=600/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🖌 Author:
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Github - [vasilemidrigan](https://github.com/vasilemidrigan)
+- LinkedIn - [Vasile Midrigan](https://www.linkedin.com/in/vasile-midrigan/)
+- Website - [Vasile Midrigan](https://vasilemidrigan.github.io/)
+- Frontend Mentor - [@vasilemidrigan](https://www.frontendmentor.io/profile/vasilemidrigan)

@@ -20,6 +20,12 @@
       }
     }
   }
+  // apply borders for upper task
+  &__tasklist__wrapper > div:nth-child(1) > div:nth-child(1) {
+    & > div {
+      border-radius: 7px 7px 0px 0px;
+    }
+  }
 
   // bottom-bar
   // (items left tracker, and clear completed button)
@@ -70,12 +76,17 @@
 // -------------- DARK THEME --------------
 // ----------------------------------------
 .dark {
-  .ToDoList__bottom-bar__spans {
-    & span {
-      color: $dark-grayish-blue;
+  .ToDoList {
+    &__bottom-bar__spans {
+      & span {
+        color: $dark-grayish-blue;
+      }
+      &__clear-completed:hover {
+        color: $very-dark-grayish-blue;
+      }
     }
-    &__clear-completed:hover {
-      color: $very-dark-grayish-blue;
+    &__dnd-hint {
+      color: $dark-grayish-blue;
     }
   }
 }
