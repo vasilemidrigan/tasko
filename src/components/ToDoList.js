@@ -56,6 +56,7 @@ export default function ToDoList({
       <div className="ToDoList__tasklist__wrapper">
         {/* framer-motion - implemented drag and drop */}
         <Reorder.Group
+          as="div"
           axis="y"
           values={toDoList}
           onReorder={setToDoList}
@@ -64,6 +65,7 @@ export default function ToDoList({
           {toDoList.filter(FILTERS[activeFilter]).map((item) => {
             return (
               <Reorder.Item
+                as="div"
                 value={item}
                 key={item.id}
                 className="ToDoList__tasklist__wrapper__dnd__task"
@@ -92,6 +94,9 @@ export default function ToDoList({
       </div>
       {/* filter section */}
       <div className="ToDoList__Filter">{filterBtns}</div>
+      <div className="ToDoList__dnd-hint">
+        <span>Drag and drop to reorder list</span>
+      </div>
     </div>
   );
 }

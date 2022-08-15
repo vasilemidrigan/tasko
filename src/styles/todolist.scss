@@ -56,6 +56,11 @@
       font-size: 0.85rem;
     }
   }
+  &__dnd-hint {
+    color: $light-grayish-blue;
+    width: 100%;
+    @include position-absolute(unset, unset, -50px, unset);
+  }
 }
 // ----------------------------------------
 // -------------- DARK THEME --------------
