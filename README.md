@@ -25,19 +25,19 @@
 
 #### 🖥 Desktop Version | ☾ Dark Theme
 
-<img src="./design/../images/screenshots/desk-version__dark-theme.png" width=800 height=500/>
+<img src="./src/assets/images/screenshots/desk-version__dark-theme.png" width=800 height=500/>
 
 #### 🖥 Desktop Version | ☀︎ Light Theme
 
-<img src="./design/../images/screenshots/desk-version__light-theme.png" width=800 height=500/>
+<img src="./src/assets/images/screenshots/desk-version__light-theme.png" width=800 height=500/>
 
 #### 📱 Mobile Version | ☾ Dark Theme
 
-<img src="./design/../images/screenshots/mob-version__dark-theme.png" width=380 height=600/>
+<img src="./src/assets/images/screenshots/mob-version__dark-theme.png" width=380 height=600/>
 
 #### 📱 Mobile Version | ☀︎ Light Theme
 
-<img src="./design/../images/screenshots/mob-version__light-theme.png" width=380 height=600/>
+<img src="./src/assets/images/screenshots/mob-version__light-theme.png" width=380 height=600/>
 
 ## 🏗 Process:
 
@@ -75,7 +75,7 @@
 - Toggle light and dark mode
 - Drag and drop for reordering items on the list
 
-<img src="./design/../images/screenshots/recording.gif" width=470 height=600/>
+<img src="./src/assets/images/screenshots/recording.gif" width=470 height=600/>
 
 ## 🖌 Author:
 
