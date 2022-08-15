@@ -81,7 +81,7 @@ export default function ToDoList({
         {/* track items left, and clear completed section */}
         <div className="ToDoList__bottom-bar">
           <div className="ToDoList__bottom-bar__spans">
-            <span className="ToDoList__bottom-bar__spans__items-left">{`${tasksAmount} items left`}</span>
+            <span className="ToDoList__bottom-bar__spans__items-left ns">{`${tasksAmount} items left`}</span>
             <span
               className="ToDoList__bottom-bar__spans__clear-completed ns"
               onClick={clearCompleted}
@@ -93,7 +93,7 @@ export default function ToDoList({
       </div>
       {/* filter section */}
       <div className="ToDoList__Filter">{filterBtns}</div>
-      <div className="ToDoList__dnd-hint">
+      <div className="ToDoList__dnd-hint ns">
         <span>Drag and drop to reorder list</span>
       </div>
     </div>

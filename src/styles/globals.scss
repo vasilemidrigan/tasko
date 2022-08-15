@@ -85,6 +85,7 @@ button {
 // avoid selecting text (blue field) on touch
 .ns {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none;
 }
 
 // Components common styles
