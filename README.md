@@ -75,7 +75,7 @@
 - Toggle light and dark mode
 - Drag and drop for reordering items on the list
 
-<img src="./src/assets/images/screenshots/recording.gif" width=470 height=600/>
+<img src="./src/assets/images/screenshots/recording.gif" width=370 height=600/>
 
 ## 🖌 Author:
 
