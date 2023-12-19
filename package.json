@@ -1,6 +1,6 @@
 {
-  "homepage": "https://vasilemidrigan.github.io/todo-app",
-  "name": "todo-app",
+  "homepage": "https://vasilemidrigan.github.io/tasko",
+  "name": "tasko",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
